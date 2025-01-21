@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website</title>
+    <style>
+      body {
+        border: 2px solid indianred;
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      .img-container {
+        display: flex;
+      }
+      .img-container div {
+        width: 50%;
+      }
+      .img-container img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 576px) {
+        .img-container {
+          flex-direction: column-reverse;
+        }
+        .img-container div {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>7 Essential things to make a Responsive Website</h2>
+      <ol>
+        <li>Viewport meta tag</li>
+        <li>CSS Relative Units like rem for font size & percent for images</li>
+        <li>Body Max-width and horizantal center align</li>
+        <li>Image fulid</li>
+        <li>
+          For two column use flex and use media query with flex direction column
+          for different screens
+        </li>
+        <li>For multi column: use grid layout</li>
+        <li>For Responsive Menue: We need JavaScript</li>
+      </ol>
+    </header>
+    <main>
+      <div class="img-container">
+        <div>
+          <img src="images/food.webp" alt="" />
+        </div>
+
+        <div>
+          <img src="images/tiger.jpg" alt="" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
